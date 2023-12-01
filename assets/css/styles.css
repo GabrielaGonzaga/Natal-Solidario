@@ -180,6 +180,27 @@ img{
   margin-bottom: var(--mb-3);
 }
 
+.obse_content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.obse_content a{
+  border-bottom: 2px solid var(--first-color-alt);
+  color: var(--first-color-alt);
+  font-weight: 700;
+}
+
+.obse_content span{
+  color: var(--first-color-alt);
+  font-weight: 700;
+  font-size: 15px;
+}
+
 .nav__link, .nav__logo, .nav__toggle{
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
@@ -627,7 +648,7 @@ img{
   }
 
   .home__container{
-    padding: 7rem 2rem 0;
+    padding: 13.5rem 2rem 0;
   }
 
   .share__container{

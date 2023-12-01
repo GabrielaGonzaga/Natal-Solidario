@@ -1,224 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="imgs/icon.png" />
-    <!--========== BOX ICONS ==========-->
-    <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-      rel="stylesheet"
-    />
 
-    <!--========== CSS ==========-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="imgs/icon.png" />
+  <!--========== BOX ICONS ==========-->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 
-    <title>Responsive landing page</title>
-  </head>
-  <body>
-    <!--========== SCROLL TOP ==========-->
-    <a href="#" class="scrolltop" id="scroll-top">
-      <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
-    </a>
+  <!--========== CSS ==========-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!--========== HEADER ==========-->
-    <header class="l-header" id="header">
-      <nav class="nav bd-container">
-        <a href="#" class="nav__logo"><p>Natal Solidário</p></a>
-        <!-- <a href="#" class="nav__logo"><img src="./imgs/logoC.png" alt=""></a> -->
+  <title>Responsive landing page</title>
+</head>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#share" class="nav__link">Ação Social</a>
-            </li>
-            <li class="nav__item">
-              <a href="#decoration" class="nav__link">Arrecadação</a>
-            </li>
-            <li class="nav__item">
-              <a href="#accessory" class="nav__link">Ponto de Arrecadação</a>
-            </li>
+<body>
+  <!--========== SCROLL TOP ==========-->
+  <a href="#" class="scrolltop" id="scroll-top">
+    <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+  </a>
 
-            <li>
-              <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
-            </li>
-          </ul>
+  <!--========== HEADER ==========-->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="#" class="nav__logo">
+        <p>Natal Solidário</p>
+      </a>
+      <!-- <a href="#" class="nav__logo"><img src="./imgs/logoC.png" alt=""></a> -->
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#share" class="nav__link">Ação Social</a>
+          </li>
+          <li class="nav__item">
+            <a href="#decoration" class="nav__link">Arrecadação</a>
+          </li>
+          <li class="nav__item">
+            <a href="#accessory" class="nav__link">Ponto de Arrecadação</a>
+          </li>
+
+          <li>
+            <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-grid-alt"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!--========== HOME ==========-->
+    <section class="home" id="home">
+      <div class="home__container bd-container bd-grid">
+        <div class="home__img">
+          <img src="imgs/banner.png" alt="" />
         </div>
 
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-grid-alt"></i>
+        <div class="home__data">
+          <h1 class="home__title">Natal Solidário</h1>
+          <p class="home__description">
+            Contribua e Faça uma criança feliz nesse Natal.
+          </p>
+          <a id="contrib" onclick="goProject()" class="button">Quero Contribuir!</a>
         </div>
-      </nav>
-    </header>
+      </div>
+    </section>
 
-    <main class="l-main">
-      <!--========== HOME ==========-->
-      <section class="home" id="home">
-        <div class="home__container bd-container bd-grid">
-          <div class="home__img">
-            <img src="imgs/banner.png" alt="" />
-          </div>
-
-          <div class="home__data">
-            <h1 class="home__title">Natal Solidário</h1>
-            <p class="home__description">
-              Contribua e Faça uma criança feliz nesse Natal.
-            </p>
-            <a id="contrib" onclick="goProject()" class="button"
-              >Quero Contribuir!</a
-            >
-          </div>
+    <!--========== SHARE ==========-->
+    <section class="share section bd-container" id="share">
+      <div class="share__container bd-grid">
+        <div class="share__data">
+          <h2 class="section-title-center">Ação Social <br /></h2>
+          <p class="share__description">
+            Junto ao
+            <a href="https://www.nucleomeninojesus.org.br/">Núcleo de Convivência Menino Jesus</a>, estamos promovendo
+            uma campanha para arrecadar brinquedos, leite
+            e roupas destinados a crianças de 6 a 14 anos. Contribua para
+            proporcionar um Natal mais especial a essas crianças! Sua
+            colaboração faz toda a diferença. Junte-se a nós e faça parte
+            dessa iniciativa solidária!
+          </p>
+          <a id="contrib" onclick="goStuff()" class="button">O que Posso Doar?</a>
         </div>
-      </section>
 
-      <!--========== SHARE ==========-->
-      <section class="share section bd-container" id="share">
-        <div class="share__container bd-grid">
-          <div class="share__data">
-            <h2 class="section-title-center">Ação Social <br /></h2>
-            <p class="share__description">
-              Junto ao
-              <a href="https://www.nucleomeninojesus.org.br/"
-                >Núcleo de Convivência Menino Jesus</a
-              >, estamos promovendo uma campanha para arrecadar brinquedos, leite
-              e roupas destinados a crianças de 6 a 14 anos. Contribua para
-              proporcionar um Natal mais especial a essas crianças! Sua
-              colaboração faz toda a diferença. Junte-se a nós e faça parte
-              dessa iniciativa solidária!
-            </p>
-            <a id="contrib" onclick="goStuff()" class="button"
-              >O que Posso Doar?</a
-            >
-          </div>
-
-          <div class="share__img">
-            <img src="assets/img/shared.png" alt="" />
-          </div>
+        <div class="share__img">
+          <img src="assets/img/shared.png" alt="" />
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--========== DECORATION ==========-->
-      <section class="decoration section bd-container" id="decoration">
-        <h2 class="section-title">Estamos Arrecadando <br /></h2>
-        <div class="decoration__container bd-grid">
-          <div class="decoration__data">
-            <img src="imgs/milk.png" alt="" class="decoration__img" />
-            <h3 class="decoration__title">Leite</h3>
-            <a class="button button-link">Litro de Leite (Qualquer Marca)</a>
-          </div>
-
-          <div class="decoration__data">
-            <img src="imgs/toys.png" alt="" class="decoration__img" />
-            <h3 class="decoration__title">Brinquedos e Accessórios</h3>
-            <a class="button button-link">Para Crianças e Adolecentes.</a>
-          </div>
-
-          <div class="decoration__data">
-            <img src="imgs/clothes.png" alt="" class="decoration__img" />
-            <h3 class="decoration__title">Roupas</h3>
-            <a class="button button-link">Dos 6 aos 14 anos.</a>
-          </div>
+    <!--========== DECORATION ==========-->
+    <section class="decoration section bd-container" id="decoration">
+      <h2 class="section-title">Estamos Arrecadando <br /></h2>
+      <div class="decoration__container bd-grid">
+        <div class="decoration__data">
+          <img src="imgs/milk.png" alt="" class="decoration__img" />
+          <h3 class="decoration__title">Leite</h3>
+          <a class="button button-link">Litro de Leite (Qualquer Marca)</a>
         </div>
-        <div class="stuff_next">
-            <a id="contrib" onclick="goStuff()" class="button">Onde Doar?</a>
-        </div>
-      </section>
 
-      <!--========== SEND GIFT ==========-->
-      <section class="send section">
-        <div class="send__container bd-container bd-grid">
-          <div class="send__content">
-            <h2 class="section-title-center send__title">Data e Local</h2>
-            <p class="send__description"></p>
-            <div class="send__direction">
-              <span>SENAI São Caetano do Sul</span>
-              <div class="local_date">
-                <i
-                  class="bx bxs-map"
-                  style="color: var(--text-color); font-size: 1.5rem"
-                ></i
-                >&nbsp;Rua Boa Vista, 801
-              </div>
-              <br />
-              <div class="start_date">
-                <i
-                  class="bx bxs-calendar-star"
-                  style="color: green; font-size: 1.5rem"
-                ></i
-                >&nbsp; De 06 de Novembro de 2023
-              </div>
-              <div class="end_date">
-                <i
-                  class="bx bxs-calendar-exclamation bx-flashing"
-                  style="color: orange; font-size: 1.5rem"
-                ></i
-                >&nbsp; Até 12 de Dezembro de 2023
-              </div>
+        <div class="decoration__data">
+          <img src="imgs/toys.png" alt="" class="decoration__img" />
+          <h3 class="decoration__title">Brinquedos e Accessórios</h3>
+          <a class="button button-link">Para Crianças e Adolecentes.</a>
+        </div>
+
+        <div class="decoration__data">
+          <img src="imgs/clothes.png" alt="" class="decoration__img" />
+          <h3 class="decoration__title">Roupas</h3>
+          <a class="button button-link">Dos 6 aos 14 anos.</a>
+        </div>
+      </div>
+      <div class="stuff_next">
+        <a id="contrib" onclick="goStuff()" class="button">Onde Doar?</a>
+      </div>
+    </section>
+
+    <!--========== SEND GIFT ==========-->
+    <section class="send section">
+      <div class="send__container bd-container bd-grid">
+        <div class="send__content">
+          <h2 class="section-title-center send__title">Data e Local</h2>
+          <p class="send__description"></p>
+          <div class="send__direction">
+            <span>SENAI São Caetano do Sul</span>
+            <div class="local_date">
+              <i class="bx bxs-map" style="color: var(--text-color); font-size: 1.5rem"></i>&nbsp;Rua Boa Vista, 801
             </div>
-            <p class="send__description">
-              Contamos com a sua colaboração e solidariedade para tornar fazer a
-              diferença no Natal dessas crianças!
-            </p>
+            <br />
+            <div class="start_date">
+              <i class="bx bxs-calendar-star" style="color: green; font-size: 1.5rem"></i>&nbsp; De 06 de Novembro de
+              2023
+            </div>
+            <div class="end_date">
+              <i class="bx bxs-calendar-exclamation bx-flashing" style="color: orange; font-size: 1.5rem"></i>&nbsp; Até
+              12 de Dezembro de 2023
+            </div>
           </div>
-
-          <div class="send__img">
-            <iframe
-              src="https://maps.google.com/maps?q=Rua%20Santo%20Andr%C3%A9,%20680&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-              frameborder="0"
-              scrolling="no"
-              style="width: 450px; height: 300px"
-            ></iframe
-            ><style>
-              .mapouter {
-                position: relative;
-                height: 1000px;
-                width: 600px;
-                background: #fff;
-              }
-              .maprouter a {
-                color: #fff !important;
-                position: absolute !important;
-                top: 0 !important;
-                z-index: 0 !important;
-              }
-            </style>
-            ><style>
-              .gmap_canvas {
-                overflow: hidden;
-                height: 1000px;
-                width: 600px;
-              }
-              .gmap_canvas iframe {
-                position: relative;
-                z-index: 2;
-              }
-            </style>
-            <!-- <img src="assets/img/send.png" alt="" /> -->
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!--========== FOOTER ==========-->
-    <footer class="footer section">
-      <div class="footer__container bd-container bd-grid">
-        <div class="footer__content">
-          <h3 class="footer__title">ONG Parceira</h3>
-          <ul>
-            <li>
-              <a
-                href="https://www.nucleomeninojesus.org.br/"
-                class="footer__link"
-                >Núcleo de Convivência Menino Jesus</a
-              >
-            </li>
-          </ul>
+          <p class="send__description">
+            Contamos com a sua colaboração e solidariedade para fazer a
+            diferença no Natal dessas crianças!
+          </p>
         </div>
 
-        <!-- <div class="footer__content">
+        <div class="send__img">
+          <iframe
+            src="https://maps.google.com/maps?q=Rua%20Santo%20Andr%C3%A9,%20680&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            frameborder="0" scrolling="no" style="width: 450px; height: 300px"></iframe>
+          <style>
+            .mapouter {
+              position: relative;
+              height: 1000px;
+              width: 600px;
+              background: #fff;
+            }
+
+            .maprouter a {
+              color: #fff !important;
+              position: absolute !important;
+              top: 0 !important;
+              z-index: 0 !important;
+            }
+          </style>
+          ><style>
+            .gmap_canvas {
+              overflow: hidden;
+              height: 1000px;
+              width: 600px;
+            }
+
+            .gmap_canvas iframe {
+              position: relative;
+              z-index: 2;
+            }
+          </style>
+          <!-- <img src="assets/img/send.png" alt="" /> -->
+        </div>
+      </div>
+    </section>
+    <div class="obse_content">
+      <p>*Após o dia <span >12 de Dezembro</span>, o local de retirada será no Núcleo de Convivência Menino Jesus</p>
+      <p>Para mais informações clique <a href="https://www.nucleomeninojesus.org.br/">Aqui</a></p>
+    </div>
+  </main>
+
+  <!--========== FOOTER ==========-->
+  <footer class="footer section">
+    <div class="footer__container bd-container bd-grid">
+      <div class="footer__content">
+        <h3 class="footer__title">ONG Parceira</h3>
+        <ul>
+          <li>
+            <a href="https://www.nucleomeninojesus.org.br/" class="footer__link">Núcleo de Convivência Menino Jesus</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div class="footer__content">
           <h3 class="footer__title">Social</h3>
           <a href="#" class="footer__social"
             ><i class="bx bxl-facebook-circle"></i
@@ -228,15 +213,16 @@
             ><i class="bx bxl-instagram-alt"></i
           ></a>
         </div> -->
-      </div>
+    </div>
 
-      <p class="footer__copy">&#169; 2023</p>
-    </footer>
+    <p class="footer__copy">&#169; 2023</p>
+  </footer>
 
-    <!--========== SCROLL REVEAL ==========-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+  <!--========== SCROLL REVEAL ==========-->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!--========== MAIN JS ==========-->
-    <script src="assets/js/main.js"></script>
-  </body>
+  <!--========== MAIN JS ==========-->
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>

@@ -25,7 +25,7 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 function goProject() {
   window.scrollTo({
-    top: window.scrollY + 400,
+    top: window.scrollY + 500,
     behavior: "smooth",
   });
 }
