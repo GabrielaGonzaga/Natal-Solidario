@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natal Solidário - Arrecadação de Brinquedos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header, nav, section, footer {
+            padding: 1em;
+        }
+
+        header {
+            background-color: #c62828;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #e53935;
+            color: #fff;
+            text-align: center;
+        }
+
+        section {
+            text-align: center;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 1em;
+        }
+
+        #como-ajudar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+        }
+
+        .container {
+            margin: 0 0 2em 0;
+            padding: 1.5em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .container:hover img {
+            transform: translate(-50%, -10%);
+        }
+
+        footer {
+            background-color: #c62828;
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Natal Solidário</h1>
+        <p>Arrecadação de Brinquedos para Crianças Carentes</p>
+    </header>
+
+    <nav>
+        <a href="#localizacao">Localização</a> |
+        <a href="#como-ajudar">Como Ajudar</a>
+    </nav>
+
+    <section id="banner">
+        <img src="banner_natal.jpg" alt="Banner Natal Solidário">
+    </section>
+
+    <section id="localizacao">
+        <h2>Localização</h2>
+        <p>Nosso ponto de coleta está localizado em:</p>
+        <address>
+            Rua Solidariedade, 123<br>
+            Bairro Feliz, Cidade Alegre<br>
+            CEP: 12345-678
+        </address>
+    </section>
+
+    <section id="como-ajudar">
+        <h2>Como Ajudar</h2>
+        <div class="container">
+            <img src="doar_brinquedos.jpg" alt="Doar Brinquedos">
+            <p><strong>Doando brinquedos:</strong> Traga um sorriso ao rosto de uma criança com um presente especial.</p>
+        </div>
+        <div class="container">
+            <img src="contribuir_leite.jpg" alt="Contribuir com Leite">
+            <p><strong>Contribuindo com leite em caixinha:</strong> Ajude-nos a fornecer alimentos nutritivos para as famílias.</p>
+        </div>
+        <div class="container">
+            <img src="entrega_presentes.jpg" alt="Entrega de Presentes">
+            <p><strong>Comparecendo à entrega dos presentes:</strong> Participe e compartilhe a alegria do Natal.</p>
+        </div>
+        <div class="container">
+            <img src="divulgar_campanha.jpg" alt="Divulgar Campanha">
+            <p><strong>Divulgando:</strong> Compartilhe nossa campanha nas redes sociais para alcançarmos mais corações generosos.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Natal Solidário | Desenvolvido por Seu Nome</p>
+    </footer>
+</body>
+
+</html>
